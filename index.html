@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!--aqui va el contenedor del slotmachine-->
+    <div class="container">
+        <div class="machine">
+            <div class="slot"><img src="./img/img3.jpg" alt="">
+                <div class="blur"></div>
+                <div class="shadow"></div>
+            </div>
+            <div class="slot"><img src="./img/img3.jpg" alt="">
+                <div class="blur"></div>
+                <div class="shadow"></div>
+            </div>
+            <div class="slot"><img src="./img/img3.jpg" alt="">
+                <div class="blur"></div>
+                <div class="shadow"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- aqui van los botones para iniciar y detener el juego-->
+    <div class="buttons">
+        <button class="iniciar">
+            <i><span class="fas fa-play"></span></i>
+        </button>
+        <button class="stop" disabled="true">
+            <i><span class="fas fa-stop"></span></i>
+        </button>
+    </div>
+
+    <!--pantalla de registro-->
+    <div class="hola">
+        <form action="">
+            <span>Nombre de usuario</span>
+            <input type="text" class="name">
+            <span>Ingreso inicial <i class="fas fa-coins"></i></span>
+            <input type="number" class="coins-initial" value="0">
+            <button>
+                Comienza ya!
+            </button>
+        </form>
+        <div class="lottie-img">
+            <img src="https://wallpaperaccess.com/full/429085.jpg">
+        </div>
+        <div class="message">
+            <h2>Bienvenido</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quae maxime quibusdam amet ipsam
+                error, excepturi nisi quam temporibus aliquid?</p>
+        </div>
+    </div>
+
+
+    <!--Componentes del UI-->
+    <header>
+        <div class="profile">
+            <div class="imgbx">
+                <img src="https://www.othertees.com/photos/designs/2017/04/73788d13dc30c62af6462b74faca9cee.jpg" alt="">
+            </div>
+            <h3>
+                Kiley Jennner
+            </h3>
+        </div>
+
+        <div class="points">
+            <div class="imglottie">
+
+            </div>
+            <h3>
+                1000
+            </h3>
+            <button class="open-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </div>
+    </header>
+
+    <!--sonidos-->
+    <audio src="https://res.cloudinary.com/dmtd0lklr/video/upload/v1639422253/slot-machine-sounds/cassette-player-button-1_oyqcd7.mp3" class="play"></audio>
+    <audio src="https://res.cloudinary.com/dmtd0lklr/video/upload/v1639422550/slot-machine-sounds/cassette-out-1_nx7byp.mp3" class="stopMusic"></audio>
+    <audio src="https://res.cloudinary.com/dmtd0lklr/video/upload/v1639422536/slot-machine-sounds/background-music_bydjjq.mp3" class="background-music"></audio>
+    <audio src="https://res.cloudinary.com/dmtd0lklr/video/upload/v1639422265/slot-machine-sounds/tape-recorder-eject-1_qmskgo.mp3" class="reject"></audio>
+    <audio src="https://res.cloudinary.com/dmtd0lklr/video/upload/v1639422335/slot-machine-sounds/mixkit-typewriter-hit-1362_votke7.wav" class="keysound"></audio>
+
+    <!--menu-->
+    <div class="menu">
+        <h2>Menu <span class="close-menu">X</span></h2>
+        <div class="update-apuesta">
+            <h3>Aumentar apuesta</h3>
+            <div class="apuestas-container">
+                <div class="apuesta select">x1</div>
+                <div class="apuesta">x2</div>
+                <div class="apuesta">x3</div>
+                <div class="apuesta">x4</div>
+            </div>
+            <p> <strong>Nota:</strong> Asi como usted puede aumentar las ganancias, tambien aumenta el monto por
+                perdida.</p>
+        </div>
+        <div class="retiro">
+            <h3>Retirar fondos</h3>
+            <button class="leave" tabindex="-1">
+                Retirar fondos
+            </button>
+        </div>
+        <div class="button-help">
+            <button tabindex="-1"><a href="./help.html" tabindex="-1"><i class="fas fa-question"></i></a></button>
+            <strong>HELP</strong>
+            </button>
+        </div>
+    </div>
+    <!--Notificaciones-->
+    <div class="notification">
+        <div class="img">
+        </div>
+        <p>
+            hola
+        </p>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="./slot-machine.js"></script>
+<script src="./lottieAnimations.js"></script>
+
+</html>

@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Arvo', serif;
+}
+
+body
+{
+    background-color: #F2C14E;
+}
+
+.rules
+{
+    width: 100%;
+
+    .started
+    {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+        h1
+        {
+            font-size: 5rem;
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+    .basic-rules
+    {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        flex-wrap: wrap;
+        gap: 2rem;
+        color: white;
+
+        .coin-img
+        {
+            width: 20rem;
+            height: 100%;
+        }
+        .basic-info
+        {
+            width: 40rem;
+            h2
+            {
+                font-size: 4rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+
+
+    .triple-value
+    {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #4D9078;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2{
+            font-size: 4rem;
+            margin-top: 2rem;
+            color: #B4436C;
+        }
+
+        p
+        {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #222;
+        }
+        
+        .x3
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 2rem;
+            flex-wrap: wrap;
+
+
+            .info
+            {
+                position: relative;
+                width: 20rem;
+                height: 20rem;
+                overflow: hidden;
+                border-radius: 2px;
+
+                img
+                {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                div
+                {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(34, 34, 34, 0.479);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    backdrop-filter: blur(5px);
+                    opacity: 0;
+                    transition: 0.50s;
+                    &:hover
+                    {
+                        opacity: 1;
+                    }
+
+                    p{
+                        color: white;
+                        font-size: 3.5rem;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+
+    .danger
+    {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #B4436C;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+        flex-wrap: wrap;
+
+        .information
+        {
+            width: 30rem;
+            h2
+            {
+                font-size: 4rem;
+                color: #F2C14E;
+                
+            }
+            p
+            {
+                font-size: 1.5rem;
+                color: #222;
+            }
+        }
+
+        .imgBx
+        {
+            position: relative;
+            width: 30rem;
+            height: 40rem;
+            overflow: hidden;
+            border-radius: 5px;
+
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            div
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(34, 34, 34, 0.479);
+                backdrop-filter: blur(5px);
+                opacity: 0;
+                transition: 0.50s;
+
+                &:hover
+                {
+                    opacity: 1;
+                }
+
+                p{
+                    color:#ff7037;
+                    font-size: 3rem;
+                    font-weight: 700;
+                    
+                }
+            }
+        }
+
+    }
+
+
+    .multi
+    {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #ff7037;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2
+        {
+            font-size: 3.5rem;
+            color:#4D9078;
+        }
+        .multiplicador
+        {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 5rem;
+            flex-wrap: wrap;
+
+            .item
+            {
+                width: 10rem;
+                height: 10rem;
+                display: flex;
+                background-color: white;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                font-size: 3rem;
+                color: #222;
+                font-weight: 700;
+                box-shadow: 2px 2px 10px rgba(34, 34, 34, 0.479) inset;
+            }
+        }
+
+        p{
+            padding: 2rem;
+            font-size: 1.5rem;
+            color: #222;
+            text-align: center;
+        }
+
+        .multi-img
+        {
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+}
+
+
+
+@media (max-width:300px) {
+    html
+    {
+        font-size: 10px;
+    }
+}

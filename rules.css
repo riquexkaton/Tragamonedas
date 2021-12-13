@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Arvo", serif;
+}
+
+body {
+  background-color: #F2C14E;
+}
+
+.rules {
+  width: 100%;
+}
+.rules .started {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.rules .started h1 {
+  font-size: 5rem;
+  width: 100%;
+  padding: 1rem;
+}
+.rules .basic-rules {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: white;
+}
+.rules .basic-rules .coin-img {
+  width: 20rem;
+  height: 100%;
+}
+.rules .basic-rules .basic-info {
+  width: 40rem;
+}
+.rules .basic-rules .basic-info h2 {
+  font-size: 4rem;
+}
+.rules .basic-rules .basic-info p {
+  font-size: 1.2rem;
+}
+.rules .triple-value {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #4D9078;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.rules .triple-value h2 {
+  font-size: 4rem;
+  margin-top: 2rem;
+  color: #B4436C;
+}
+.rules .triple-value p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+.rules .triple-value .x3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.rules .triple-value .x3 .info {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.rules .triple-value .x3 .info img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.rules .triple-value .x3 .info div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.479);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.rules .triple-value .x3 .info div:hover {
+  opacity: 1;
+}
+.rules .triple-value .x3 .info div p {
+  color: white;
+  font-size: 3.5rem;
+}
+.rules .danger {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #B4436C;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.rules .danger .information {
+  width: 30rem;
+}
+.rules .danger .information h2 {
+  font-size: 4rem;
+  color: #F2C14E;
+}
+.rules .danger .information p {
+  font-size: 1.5rem;
+  color: #222;
+}
+.rules .danger .imgBx {
+  position: relative;
+  width: 30rem;
+  height: 40rem;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.rules .danger .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.rules .danger .imgBx div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(34, 34, 34, 0.479);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.rules .danger .imgBx div:hover {
+  opacity: 1;
+}
+.rules .danger .imgBx div p {
+  color: #ff7037;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.rules .multi {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ff7037;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rules .multi h2 {
+  font-size: 3.5rem;
+  color: #4D9078;
+}
+.rules .multi .multiplicador {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+.rules .multi .multiplicador .item {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  background-color: white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #222;
+  font-weight: 700;
+  box-shadow: 2px 2px 10px rgba(34, 34, 34, 0.479) inset;
+}
+.rules .multi p {
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: #222;
+  text-align: center;
+}
+.rules .multi .multi-img {
+  width: 20rem;
+  height: 20rem;
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=rules.css.map */
